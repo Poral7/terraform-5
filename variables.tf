@@ -1,17 +1,19 @@
 variable "sg-name" {
-    type    = string
-    default = "allow_tls"
+  type = string
+  default = "roboshop-all-aws"
 }
-
 
 variable "sg-description" {
-    type    = string
-    default = "Allow TLS inbound traffic and all outbound traffic"
+  type = string
+  default = "Allow TLS inbound traffic"
 }
-
 
 variable "inbound-from-port" {
-    #type    = string
-    default  = 0
+  #type = string
+  default = 0
 }
 
+variable "cidr_blocks" {
+  type = list
+  default = ["0.0.0.0/0"]
+}
