@@ -3,3 +3,4 @@ resource "aws_instance" "web" {
   instance_type = var.instance_name == "MongoDB" ? "t3.small" : "t2.micro"
    
 }
+  
